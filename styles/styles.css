@@ -1,0 +1,636 @@
+a {
+  text-decoration: none;  
+} 
+
+a:visited {
+  color: currentColor;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: rgba(187,169,155,255);
+    text-align: center;
+    height: 8cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header div {
+    height: 6cm;
+    width: 9.84cm;
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+
+  #capa {
+    height: 100%;
+    width: 100%;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 60%)); 
+    filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 60%));
+  }
+  
+
+  /* Estilos para o menu */
+
+  #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+
+nav {
+  background-color: #333;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 3px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: rgb(190, 154, 106);
+  text-decoration: none;
+  
+}
+
+/* Submenu */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #333;
+  width: max-content;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+}
+
+  
+  /* Estilos para o corpo */
+  main {
+    padding-top: 10px;
+    background-color: #f7f2ec;
+  }
+
+  main a:visited {
+    color: currentColor;
+  }
+
+  
+/* Estilos para o carrossel */
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+  height: 300px;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 228, 211);
+  z-index: 0;
+}
+
+.slide img {
+  width: 280px;
+  height: 246px;
+}
+
+.slide p {
+  color: #583325;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  max-width: 500px;
+}
+
+.slide a:hover {
+  text-decoration: underline;
+  color: #583325;
+}
+
+/* Botões de navegação */
+.next-btn {
+  background-color: #583325;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn, .next-btn {
+  background-color: #583325;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  margin-right: 10px;
+}
+
+#btn {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+  
+  .image-text-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .image-text-container p {
+    font-size: 20px;
+    
+  }
+  .image-text-container a:hover {
+    text-decoration:none;
+  }
+  
+  .item {
+    text-align: center;
+    width: 300px;
+  }
+
+  .item p {
+    color: rgb(88, 51, 37);
+  }
+  
+  .item img {
+    width: 228px;
+    height: 200px;
+    border-radius: 10%;
+  }
+
+  .image-text-container a:hover {    
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(88, 51, 37, 90%)); 
+    filter: drop-shadow(0px 0px 5px rgba(88, 51, 37, 90%));
+  }
+
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: rgb(241, 228, 211);
+    padding: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  }
+
+  #facebook {
+    background-color: #4267b3;
+}
+
+#pinterest {
+  background-color: rgb(201, 0, 0);
+}
+
+#whatsapp {
+  background: rgb(0, 163, 0);
+}
+
+#tiktok {
+  background-color: black;
+}
+
+#twitter {
+  background-color: rgb(0, 162, 255);
+}
+  
+  .contacts p {
+    font-size: 20px;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.50rem;
+    width: 2.50rem;
+    color: white;
+    border-radius: 15%;
+    transition: all 0.4s;
+  }
+  
+  .social-media a {
+    margin: 0 5px;
+    text-decoration: none;
+  }
+
+  .social-media i {
+    font-size: 2rem;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1cm;
+  }
+
+  input {
+    margin-top: 5px;
+  }
+  
+  .message-box {
+    width: 300px;
+    height: 80px;
+    resize: none;
+    margin-bottom: 5px;
+  }
+  
+  .contact button {
+    padding: 10px 20px;
+    background-color: #583325;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .item {
+      text-align: center;
+      width: 190px;
+    }
+  
+    .item p {
+      color: #583325;
+      width: 190px;
+    }
+    
+    .item img {
+      width: 180px;
+      height: 174px;
+      border-radius: 10%;
+    }
+  }
+  
+    /* Estilos para smartphones */
+    @media screen and (max-width: 450px) {
+
+      main {
+        padding: auto;
+      }
+
+      /* Estilos para o cabeçalho */
+      header {
+        background-color: rgba(187,169,155,255);
+        text-align: center;
+        height: 6cm;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      header div {
+        height: 4cm;
+        width: 6.56cm;
+      }
+  
+      header h1 {
+        font-size: 36px;
+      }
+  
+      #capa {
+        height: 100%;
+        width: 100%;
+        -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+        filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
+      }
+      
+
+      #nav ul li {
+        width: 100%;
+        background: black;
+      }
+    
+      #nav ul li ul {
+        position: relative;
+        width: 100%;
+      }
+    
+      #nav ul li ul li {
+        background: rgb(24, 24, 24);
+      }
+      
+      #menu {        
+        position: absolute;
+        display: block;
+        width: 100%;
+        right: 0px;
+        background: #000000;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+      #nav.active #menu {
+        height: auto;
+        visibility: visible;
+        overflow-y: auto;
+      }
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+        color: white;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+
+
+  
+      /* Estilos para o carrossel */
+  .carousel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    height: 200px;
+  }
+  
+  .slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 228, 211);
+  }
+  
+  .slide img {
+    width: 140px;
+    height: 123px;
+  }
+  
+  .slide p {
+    color: #583325;
+    text-decoration: underline;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 200px;
+  }
+  
+  .slide a:hover {
+    text-decoration: underline;
+    color: #583325;
+  }
+  
+  /* Botões de navegação */
+  .next-btn {
+    background-color: #583325;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn, .next-btn {
+    background-color: #583325;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    margin-right: 10px;
+  }
+  
+  #btn {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+      .carousel-responsive {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+      }
+    
+      .image-text-container {
+        flex: 0 0 auto;
+        width: auto;
+      }
+    
+      .item {
+        flex: 0 0 calc(100% - 1rem);
+        margin-right: 1rem;
+        width: 180px;
+      }
+  
+      .item p {
+        color: #583325;
+        text-align: center;
+        font-size: 17px;
+      }
+  
+      .item img {
+        width: 142.5px;
+        height: 125px;
+        border-radius: 10%;
+      }
+
+        /* Estilos para o rodapé */
+  footer {
+    background-color: rgb(241, 228, 211);
+    padding: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  }
+
+  #facebook {
+    background-color: #4267b3;
+}
+
+#pinterest {
+  background-color: rgb(201, 0, 0);
+}
+
+#whatsapp {
+  background: rgb(0, 163, 0);
+}
+
+#tiktok {
+  background-color: black;
+}
+
+#twitter {
+  background-color: rgb(0, 162, 255);
+}
+  
+  .contacts p {
+    font-size: 20px;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.50rem;
+    width: 2.50rem;
+    color: white;
+    border-radius: 15%;
+    transition: all 0.4s;
+  }
+  
+  .social-media a {
+    margin: 0 5px;
+    text-decoration: none;
+  }
+
+  .social-media i {
+    font-size: 2rem;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1cm;
+  }
+
+  input {
+    margin-top: 5px;
+  }
+  
+  .message-box {
+    width: 300px;
+    height: 80px;
+    resize: none;
+    margin-bottom: 5px;
+  }
+  
+  .contact button {
+    padding: 10px 20px;
+    background-color: #583325;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+

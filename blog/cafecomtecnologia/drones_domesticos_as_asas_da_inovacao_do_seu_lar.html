@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drones Domésticos: As Asas da Inovação no Seu Lar</title>
+  <link rel="stylesheet" href="../../styles/blogpost.css">
+</head>
+<body>
+  <header>
+    <div>
+      <img id="capa" src="../../img/favicon.png" alt="">
+  </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="menu" role="menu">
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="../../shopping.html">Shopping</a></li>
+      <li class="has-submenu">
+        <a href="#blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="../cafecompet.html">Café com pet</a></li>
+          <li><a href="../cafecomcafe.html">Café com café</a></li>
+          <li><a href="../cafecomtecnologia.html">Café com tecnologia</a></li>
+          <li><a href="../cafecompsicologia.html">Café com psicologia</a></li>
+          <li><a href="../cafecomfinancas.html">Café com finanças</a></li>
+          <li><a href="../cafecommusica.html">Café com música</a></li>
+        </ul>
+      </li>
+      <li><a href="#grupo">Grupo</a></li>
+      <li><a href="../../game.html">Game</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Drones Domésticos: As Asas da Inovação no Seu Lar</h2>
+      <img src="../../img/thumbdrone.jpg" alt="Imagem Ilustrativa">
+      <p>Os drones, anteriormente associados a atividades militares e de exploração espacial, têm conquistado cada vez mais espaço na utilização doméstica, trazendo consigo um leque de vantagens que revolucionam a forma como interagimos com o nosso lar. Esses pequenos e versáteis dispositivos têm se mostrado como verdadeiras asas da inovação, proporcionando experiências únicas e facilitando diversas tarefas do cotidiano.
+        <br><br>
+        1. Fotografia e Vídeo Aéreo: Talvez uma das aplicações mais populares dos drones domésticos seja a fotografia e a filmagem aérea. Com suas câmeras de alta resolução, eles nos permitem capturar imagens impressionantes de nossas casas, jardins e arredores, proporcionando ângulos únicos e perspectivas panorâmicas que antes eram privilégio de fotógrafos profissionais.
+        <br><br>
+        2. Monitoramento de Propriedades: Com um drone, é possível monitorar de forma remota a segurança de sua propriedade. Você pode inspecionar telhados, cercas e áreas de difícil acesso, identificar potenciais problemas ou verificar se tudo está em ordem mesmo quando estiver longe de casa.
+        <br><br>
+        3. Entregas e Compras Online: A utilização de drones para entregas e compras online tem se mostrado uma alternativa promissora para o futuro. Empresas têm desenvolvido sistemas de entrega por drones, permitindo que produtos sejam entregues com maior rapidez e eficiência, especialmente em áreas de difícil acesso ou em locais com tráfego intenso.
+        <br><br>
+        4. Diversão e Entretenimento: Pilotar um drone pode ser uma atividade divertida e empolgante para toda a família. Com diversos modelos disponíveis no mercado, é possível encontrar drones adequados para diferentes idades e níveis de habilidade. Além disso, algumas opções contam com recursos como realidade virtual, o que amplia ainda mais a experiência de diversão.
+        <br><br>
+        5. Agricultura e Monitoramento Ambiental: Na área rural, os drones têm sido usados para monitorar plantações, detectar pragas, avaliar a qualidade do solo e otimizar processos agrícolas. Também são aplicados em projetos de monitoramento ambiental, auxiliando na preservação de ecossistemas e na identificação de possíveis problemas ambientais.
+        <br><br>
+        6. Inspeções e Manutenção: Os drones são especialmente úteis em atividades de inspeção e manutenção, permitindo que você avalie visualmente o estado de telhados, chaminés, antenas, painéis solares e outros elementos de difícil acesso, economizando tempo e evitando riscos para a segurança pessoal.
+        <br><br>
+        7. Mapeamento e Cartografia: Com a capacidade de capturar imagens em alta resolução de grandes áreas, os drones têm se tornado importantes ferramentas no mapeamento e cartografia, sendo utilizados para criar mapas precisos e atualizados de locais diversos.
+        <br><br>
+        Entretanto, é importante lembrar que o uso de drones deve ser feito com responsabilidade e em conformidade com as regulamentações locais. Além disso, é fundamental respeitar a privacidade de terceiros e evitar voos em áreas restritas ou perigosas.
+        <br><br>
+        Com o avanço da tecnologia e a popularização dos drones, esses pequenos dispositivos têm revolucionado o conceito de inovação em nossos lares, proporcionando uma infinidade de vantagens e novas possibilidades. Então, que tal alçar voo com essa tecnologia fascinante e descobrir as asas da inovação que os drones podem trazer para a sua vida doméstica?</p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>contato@cafedatarde.com</p>
+  </footer>
+
+  <script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+</body>
+</html>

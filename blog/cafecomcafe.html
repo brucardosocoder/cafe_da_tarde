@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café com café</title>
+  <link rel="stylesheet" href="../styles/cafecom.css">
+</head>
+<body>
+  <!-- Cabeçalho do blog -->
+  <header>
+    <div>
+      <img id="capa" src="../img/favicon.png" alt="">
+  </div>
+    <h1>Café com café</h1>
+  </header>
+
+  <!-- Menu -->
+  <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="menu" role="menu">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../shopping.html">Shopping</a></li>
+      <li class="has-submenu">
+        <a href="#blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="cafecompet.html">Café com pet</a></li>
+          <li><a href="cafecomcafe.html">Café com café</a></li>
+          <li><a href="cafecomtecnologia.html">Café com tecnologia</a></li>
+          <li><a href="cafecompsicologia.html">Café com psicologia</a></li>
+          <li><a href="cafecomfinancas.html">Café com finanças</a></li>
+          <li><a href="cafecommusica.html">Café com música</a></li>
+        </ul>
+      </li>
+      <li><a href="#grupo">Grupo</a></li>
+      <li><a href="../game.html">Game</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo do blog -->
+  <main>
+    <a href="cafecomcafe/cafe_mais_que_um_estimulante.html"><div class="post">
+      <img src="../img/thumbcafe.jpg" alt="Imagem do Post 1">
+      <h2>Café: Mais do que um Estimulante, um Elixir de Benefícios para a Saúde</h2>
+      <p>Para muitas pessoas, o café é muito mais do que uma simples bebida energética; é um verdadeiro prazer matinal e um aliado infalível ao longo do dia. Além de proporcionar aquela dose essencial de energia, o café também traz consigo uma série de benefícios para a saúde que podem surpreender até mesmo os maiores apreciadores dessa deliciosa bebida...</p>
+    </div></a>
+
+    
+
+    <!-- Adicione mais divs "post" para outros posts -->
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>contato@cafedatarde.com</p>
+  </footer>
+
+  <script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+</body>
+</html>

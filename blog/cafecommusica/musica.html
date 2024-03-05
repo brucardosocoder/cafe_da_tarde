@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Música</title>
+  <link rel="stylesheet" href="../../styles/blogpost.css">
+</head>
+<body>
+  <header>
+    <div>
+      <img id="capa" src="../../img/favicon.png" alt="">
+  </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="menu" role="menu">
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="../../shopping.html">Shopping</a></li>
+      <li class="has-submenu">
+        <a href="#blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="../cafecompet.html">Café com pet</a></li>
+          <li><a href="../cafecomcafe.html">Café com café</a></li>
+          <li><a href="../cafecomtecnologia.html">Café com tecnologia</a></li>
+          <li><a href="../cafecompsicologia.html">Café com psicologia</a></li>
+          <li><a href="../cafecomfinancas.html">Café com finanças</a></li>
+          <li><a href="../cafecommusica.html">Café com música</a></li>
+        </ul>
+      </li>
+      <li><a href="#grupo">Grupo</a></li>
+      <li><a href="../../game.html">Game</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Música</h2>
+      <img src="../../img/favicon.png" alt="Imagem Ilustrativa">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officia labore earum consectetur ad exercitationem incidunt iusto numquam aspernatur laboriosam dignissimos adipisci distinctio molestiae assumenda libero, consequatur culpa cumque quos!
+      <br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda autem accusantium natus quis fugit nobis, modi ipsum enim in, unde nesciunt quibusdam doloremque libero, ut aperiam! Vitae, atque explicabo?
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus enim eos, corrupti quisquam unde nulla neque. Rerum sapiente, officia assumenda cum, voluptate earum sed dignissimos impedit iusto non veniam.
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officia labore earum consectetur ad exercitationem incidunt iusto numquam aspernatur laboriosam dignissimos adipisci distinctio molestiae assumenda libero, consequatur culpa cumque quos!
+      <br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda autem accusantium natus quis fugit nobis, modi ipsum enim in, unde nesciunt quibusdam doloremque libero, ut aperiam! Vitae, atque explicabo?
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus enim eos, corrupti quisquam unde nulla neque. Rerum sapiente, officia assumenda cum, voluptate earum sed dignissimos impedit iusto non veniam.
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officia labore earum consectetur ad exercitationem incidunt iusto numquam aspernatur laboriosam dignissimos adipisci distinctio molestiae assumenda libero, consequatur culpa cumque quos!
+      <br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda autem accusantium natus quis fugit nobis, modi ipsum enim in, unde nesciunt quibusdam doloremque libero, ut aperiam! Vitae, atque explicabo?
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus enim eos, corrupti quisquam unde nulla neque. Rerum sapiente, officia assumenda cum, voluptate earum sed dignissimos impedit iusto non veniam.
+      <br> 
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>contato@cafedatarde.com</p>
+  </footer>
+
+  <script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+</body>
+</html>

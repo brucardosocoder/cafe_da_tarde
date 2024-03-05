@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café da Tarde</title>
+  <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div>
+        <img id="capa" src="img/favicon.png" alt=""><h1>Game</h1>
+    </div>
+      
+  </header>
+
+  <!-- Menu -->
+  <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="menu" role="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="shopping.html">Shopping</a></li>
+      <li class="has-submenu">
+        <a href="#blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="blog/cafecompet.html">Café com pet</a></li>
+          <li><a href="blog/cafecomcafe.html">Café com café</a></li>
+          <li><a href="blog/cafecomtecnologia.html">Café com tecnologia</a></li>
+          <li><a href="blog/cafecompsicologia.html">Café com psicologia</a></li>
+          <li><a href="blog/cafecomfinancas.html">Café com finanças</a></li>
+          <li><a href="blog/cafecommusica.html">Café com música</a></li>
+        </ul>
+      </li>
+      <li><a href="#grupo">Grupo</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+    </ul>
+  </nav>
+
+  <!-- Corpo -->
+  <main>
+  
+
+  <div class="carousel-responsive">
+    <div class="image-text-container">
+      <!-- Divs com imagens e textos -->
+      <a href="game\racing\racing.html"><div class="item">
+        <img src="game\racing\images\vehicles\audi.png" alt="Imagem 1">
+        <p>Corrida</p>
+      </div></a>
+      <a href="game\mariobros\mariobros.html"><div class="item">
+        <img src="game\mariobros\content\mariobros.PNG" alt="Imagem 2">
+        <p>Mario Bros</p>
+      </div></a>
+      <a href="game\spaceinvaders\spaceinvaders.html"><div class="item">
+        <img src="game/spaceinvaders/spaceinvaders.PNG" alt="Imagem 3">
+        <p>Space Invaders</p>
+      </div></a>
+    </div>
+  </div>
+
+  <div class="carousel-responsive">
+    <div class="image-text-container">
+      <!-- Mais 3 divs com imagens e textos -->
+       <a href="game\planetdefense\planetdefense.html"><div class="item">
+       <img src="game\planetdefense\planetdefense.PNG" alt="Imagem 4">
+        <p>Planet Defense</p>
+      </div></a>
+      <a href="game\memory\memoria.html"><div class="item">
+        <img src="game\memory\memoria.PNG" alt="Imagem 5">
+        <p>Memória</p>
+      </div></a>
+      <a href="game\snake\snake.html"><div class="item">
+        <img src="game/snake/snake.PNG" alt="Imagem 6">
+        <p>Jogo da Cobrinha</p>
+      </div></a>
+    </div>
+  </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="contacts">
+      <!-- Contatos -->
+      <p>contato@cafedatarde.com</p>
+    </div>
+    <div class="social-media">
+      <!-- Redes Sociais -->
+      <a href="https://www.instagram.com/cafedatardepontocom" target="_blank" class="footer-link" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.facebook.com/cafedatardepontocom" target="_blank" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://br.pinterest.com/cafedatardepontocom" target="_blank" class="footer-link" id="pinterest">
+            <i class="fa-brands fa-pinterest"></i>
+        </a>
+        <a href="https://www.tiktok.com/@cafedatardepontocom" target="_blank" class="footer-link" id="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/cafedatardepontocom" target="_blank" class="footer-link" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+      <a href="https://api.whatsapp.com/send?phone=5521991918117" target="_blank" class="footer-link" id="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+    <form class="contact" action="https://formsubmit.co/urielflamante@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input class="message-box" type="text" name="mensagem" placeholder="Envie sua mensagem aqui...">
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </footer>
+  
+    <script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+
+</body>
+</html>

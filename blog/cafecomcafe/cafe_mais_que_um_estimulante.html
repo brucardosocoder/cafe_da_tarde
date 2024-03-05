@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café: Mais do que um Estimulante, um Elixir de Benefícios para a Saúde</title>
+  <link rel="stylesheet" href="../../styles/blogpost.css">
+</head>
+<body>
+  <header>
+    <div>
+      <img id="capa" src="../../img/favicon.png" alt="">
+  </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="menu" role="menu">
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="../../shopping.html">Shopping</a></li>
+      <li class="has-submenu">
+        <a href="#blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="../cafecompet.html">Café com pet</a></li>
+          <li><a href="../cafecomcafe.html">Café com café</a></li>
+          <li><a href="../cafecomtecnologia.html">Café com tecnologia</a></li>
+          <li><a href="../cafecompsicologia.html">Café com psicologia</a></li>
+          <li><a href="../cafecomfinancas.html">Café com finanças</a></li>
+          <li><a href="../cafecommusica.html">Café com música</a></li>
+        </ul>
+      </li>
+      <li><a href="#grupo">Grupo</a></li>
+      <li><a href="../../game.html">Game</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Café: Mais do que um Estimulante, um Elixir de Benefícios para a Saúde</h2>
+      <img src="../../img/thumbcafe.jpg" alt="Imagem Ilustrativa">
+      <p>Para muitas pessoas, o café é muito mais do que uma simples bebida energética; é um verdadeiro prazer matinal e um aliado infalível ao longo do dia. Além de proporcionar aquela dose essencial de energia, o café também traz consigo uma série de benefícios para a saúde que podem surpreender até mesmo os maiores apreciadores dessa deliciosa bebida.
+        <br><br>
+        Estímulo ao Cérebro: O café é conhecido por seu efeito estimulante, graças à presença da cafeína. Essa substância pode melhorar a concentração, o foco e a capacidade de raciocínio, tornando-se um companheiro ideal para enfrentar desafios intelectuais e aumentar a produtividade.
+        <br><br>
+        Melhora do Humor: A sensação de bem-estar que o café proporciona não é mera coincidência. A cafeína atua no sistema nervoso central, estimulando a produção de neurotransmissores como a dopamina e a serotonina, que estão diretamente relacionados ao humor e à sensação de prazer.
+        <br><br>
+        Ação Antioxidante: O café é uma fonte rica de antioxidantes, como os ácidos clorogênicos, que ajudam a combater os radicais livres e protegem as células do corpo contra danos oxidativos. Essa ação antioxidante pode contribuir para a prevenção de algumas doenças e o envelhecimento precoce.
+        <br><br>
+        Saúde Cardiovascular: Estudos sugerem que o consumo moderado de café pode estar associado a um menor risco de desenvolver doenças cardiovasculares, como acidente vascular cerebral (AVC) e doença arterial coronariana. O café também pode ajudar a melhorar a função endotelial, essencial para a saúde dos vasos sanguíneos.
+        <br><br>
+        Efeito Termogênico: A cafeína presente no café tem um efeito termogênico, ou seja, ajuda a aumentar o metabolismo e a queima de calorias, o que pode ser benéfico para quem busca auxílio na perda de peso quando aliado a hábitos alimentares saudáveis e prática de exercícios físicos.
+        <br><br>
+        Prevenção de Doenças Neurodegenerativas: Algumas pesquisas sugerem que o consumo regular de café pode estar associado a um menor risco de desenvolver doenças neurodegenerativas, como o mal de Alzheimer e o mal de Parkinson. Acredita-se que os antioxidantes e compostos bioativos presentes no café possam exercer um papel protetor no cérebro.
+        <br><br>
+        Redução do Risco de Diabetes Tipo 2: Estudos epidemiológicos mostram que o consumo moderado de café pode estar relacionado a um menor risco de desenvolver diabetes tipo 2. Acredita-se que a cafeína e outros compostos do café possam melhorar a sensibilidade à insulina e o metabolismo da glicose.
+        <br><br>
+        Apesar dos inúmeros benefícios, é importante lembrar que o consumo de café deve ser moderado, já que o exagero pode levar a efeitos colaterais indesejados, como insônia e irritabilidade. A quantidade ideal varia de pessoa para pessoa, mas geralmente 2 a 3 xícaras de café por dia são consideradas seguras para a maioria dos adultos.
+        <br><br>
+        Portanto, ao apreciar aquele delicioso café, saiba que ele vai muito além do sabor e do aroma que nos encantam. É um verdadeiro elixir de benefícios para a saúde, desde que consumido com moderação. Então, aproveite sua xícara diária de café e brinde a uma vida mais saudável e estimulante!</p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>contato@cafedatarde.com</p>
+  </footer>
+
+  <script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="cafedatarde.com" />
+  <meta property="og:image" content="https://brucardosocoder.com/cafedatarde/img/favicon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://brucardosocoder.com/cafedatarde/index.html" />
+  <meta property="og:site_name" content="Café da Tarde" />
+  <title>Café da Tarde</title>
+  <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div>
+        <img id="capa" src="img/favicon.png" alt="">
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="menu" role="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="shopping.html">Shopping</a></li>
+      <li class="has-submenu">
+        <a href="#blog">Blog</a>
+        <ul class="submenu">
+          <li><a href="blog/cafecompet.html">Café com pet</a></li>
+          <li><a href="blog/cafecomcafe.html">Café com café</a></li>
+          <li><a href="blog/cafecomtecnologia.html">Café com tecnologia</a></li>
+          <li><a href="blog/cafecompsicologia.html">Café com psicologia</a></li>
+          <li><a href="blog/cafecomfinancas.html">Café com finanças</a></li>
+          <li><a href="blog/cafecommusica.html">Café com música</a></li>
+        </ul>
+      </li>
+      <li><a href="#grupo">Grupo</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+    </ul>
+  </nav>
+
+  <!-- Corpo -->
+  <main>
+  <!-- Carrossel -->
+  <div class="carousel">
+    <div class="slides-container">
+        <div class="slide">
+        <img src="img/thumbgato.jpg" alt="thumbgato">
+        <a href="blog/cafecompet/decifrando_o_enigma_felino.html"><p>Decifrando o Enigma Felino: Compreendendo o Comportamento dos Gatos</p></a>
+      </div>
+      <div class="slide">
+        <img src="img/thumbcafe.jpg" alt="thumbcafe">
+        <a href="blog/cafecomcafe/cafe_mais_que_um_estimulante.html"><p>Café: Mais do que um Estimulante, um Elixir de Benefícios para a Saúde</p></a>
+      </div>
+      <div class="slide">
+        <img src="img/3D Retrô Game Stick 4K - Ps1 e todos os outros!.webp" alt="3D Retrô Game Stick">
+        <a href="https://a2anegocios.com.br/collections/mais-vendidos/products/portable-video-game-console-gd10-plus-wireless-controllers-4k-hd-tv-retro-game-console-50-emulators-40000-games-for-kid-gifts?variant=45956924342568" target="_blank"><p>3D Retrô Game Stick 4K - Ps1 e todos os outros!</p></a>
+      </div>
+      <div class="slide">
+        <img src="img/thumbdrone.jpg" alt="thumbdrone">
+        <a href="blog/cafecomtecnologia/drones_domesticos_as_asas_da_inovacao_do_seu_lar.html"><p>Drones Domésticos: As Asas da Inovação no Seu Lar</p></a>
+      </div>
+      <div class="slide">
+        <img src="img/AMAX ULTRA 2023.webp" alt="AMAX ULTRA 2023">
+        <a href="https://a2anegocios.com.br/collections/smartwatches-e-acessorios/products/amax-ultra" target="_blank"><p>AMAX ULTRA 2023</p></a>
+      </div>
+      <div class="slide">
+        <img src="img/Projetor Estilo Samsung 4k Wireless Inteligente.webp" alt="AMAX ULTRA 2023">
+        <a href="https://a2anegocios.com.br/collections/oferta-em-alta/products/salange-hy300-projector-free-style-for-samsung-xiaomi-android-wifi-home-cinema-720p-outdoor-1080p-4k-supported-hdmi-usb" target="_blank"><p>Projetor Estilo Samsung 4k Wireless Inteligente</p></a>
+      </div>
+      <!-- Adicione mais divs "slide" para outras imagens -->
+    </div>
+    <div id="btn">
+    <button class="prev-btn">Anterior</button>
+    <button class="next-btn">Próximo</button>
+     </div>
+  </div>
+
+  <div class="carousel-responsive">
+    <div class="image-text-container">
+      <!-- Divs com imagens e textos -->
+      <a href="blog/cafecompet/decifrando_o_enigma_felino.html"><div class="item">
+        <img src="img/thumbgato.jpg" alt="Imagem 1">
+        <p>Decifrando o Enigma Felino: Compreendendo o Comportamento dos Gatos</p>
+      </div></a>
+      <a href="blog/cafecomcafe/cafe_mais_que_um_estimulante.html"><div class="item">
+        <img src="img/thumbcafe.jpg" alt="Imagem 2">
+        <p>Café: Mais do que um Estimulante, um Elixir de Benefícios para a Saúde</p>
+      </div></a>
+      <a href="blog/cafecomtecnologia/drones_domesticos_as_asas_da_inovacao_do_seu_lar.html"><div class="item">
+        <img src="img/thumbdrone.jpg" alt="Imagem 3">
+        <p>Drones Domésticos: As Asas da Inovação no Seu Lar</p>
+      </div></a>
+    </div>
+  </div>
+
+  <div class="carousel-responsive">
+    <div class="image-text-container">
+      <!-- Mais 3 divs com imagens e textos -->
+       <a href="https://a2anegocios.com.br/collections/mais-vendidos/products/portable-video-game-console-gd10-plus-wireless-controllers-4k-hd-tv-retro-game-console-50-emulators-40000-games-for-kid-gifts?variant=45956924342568" target="_blank"><div class="item">
+       <img src="img/3D Retrô Game Stick 4K - Ps1 e todos os outros!.webp" alt="Imagem 4">
+        <p>3D Retrô Game Stick 4K - Ps1 e todos os outros!</p>
+      </div></a>
+      <a href="https://a2anegocios.com.br/collections/smartwatches-e-acessorios/products/amax-ultra" target="_blank"><div class="item">
+        <img src="img/AMAX ULTRA 2023.webp" alt="Imagem 5">
+        <p>AMAX ULTRA 2023</p>
+      </div></a>
+      <a href="https://a2anegocios.com.br/collections/oferta-em-alta/products/salange-hy300-projector-free-style-for-samsung-xiaomi-android-wifi-home-cinema-720p-outdoor-1080p-4k-supported-hdmi-usb" target="_blank"><div class="item">
+        <img src="img/Projetor Estilo Samsung 4k Wireless Inteligente.webp" alt="Imagem 6">
+        <p>Projetor Estilo Samsung 4k Wireless Inteligente</p>
+      </div></a>
+    </div>
+  </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="contacts">
+      <!-- Contatos -->
+      <p>contato@cafedatarde.com</p>
+    </div>
+    <div class="social-media">
+      <!-- Redes Sociais -->
+      <a href="https://www.instagram.com/cafedatardepontocom" target="_blank" class="footer-link" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.facebook.com/cafedatardepontocom" target="_blank" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://br.pinterest.com/cafedatardepontocom" target="_blank" class="footer-link" id="pinterest">
+            <i class="fa-brands fa-pinterest"></i>
+        </a>
+        <a href="https://www.tiktok.com/@cafedatardepontocom" target="_blank" class="footer-link" id="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/cafedatardex" target="_blank" class="footer-link" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+      <a href="https://api.whatsapp.com/send?phone=5521991918117" target="_blank" class="footer-link" id="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+    <form class="contact" action="https://formsubmit.co/urielflamante@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input class="message-box" type="text" name="mensagem" placeholder="Envie sua mensagem aqui...">
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+
+</body>
+</html>

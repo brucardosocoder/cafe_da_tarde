@@ -1,0 +1,255 @@
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: rgba(187,169,155,255);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 24px;    
+    font-family: cursive;
+  }
+
+  #capa {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0 0 0 / 60%)); 
+    filter: drop-shadow(0px 0px 8px rgba(0 0 0 / 60%));
+  }
+
+  /* Estilos para o menu */
+
+  #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+
+nav {
+  background-color: #333;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 3px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: rgb(190, 154, 106);
+  text-decoration: none;
+  
+}
+
+/* Submenu */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #333;
+  width: max-content;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+}
+
+
+  
+  main {
+    background-color: #f7f2ec;
+    padding: 1rem;
+  }
+  
+  article {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  article h2 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  
+  article p {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  img {
+    width: 500px;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+
+  /* Estilos para smartphones */
+  @media screen and (max-width: 768px) {
+
+    
+
+    #nav ul li {
+      width: 100%;
+      background: black;
+    }
+  
+    #nav ul li ul {
+      position: relative;
+      width: 100%;
+    }
+  
+    #nav ul li ul li {
+      background: rgb(24, 24, 24);
+    }
+    
+    #menu {        
+      position: absolute;
+      display: block;
+      width: 100%;
+      right: 0px;
+      background: #000000;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: auto;
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: white;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+
+    article {
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+  }
+
+    @media screen and (max-width: 420px) {
+    
+    img {
+      width: 250px;
+      height: auto;
+    }
+
+    article {
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+  }
